@@ -1,5 +1,6 @@
-$(document).ready(function(){
+// $(document).ready(function(){
     console.log("ready")
+    console.log("chicken")
     var clockRunning = false;
     var timer;
     var countDown = {
@@ -11,13 +12,14 @@ $(document).ready(function(){
         },
         startTimer: function(){
             if(!clockRunning){
-                timer = setInterval(countDown.count,150000)
+                timer = setInterval(countDown.count, 1000)
                 clockRunning=true;
             }
         },
         count: function(){
             countDown.time--
             var convertedTime = countDown.timeConverter(countDown.time);
+            $("#clockTimer").text(convertedTime)
             console.log(convertedTime);
             // assign this to a div
         },
@@ -42,4 +44,7 @@ $(document).ready(function(){
     // end of object block
     }
 // end of .ready block.
-});
+
+countDown.startTimer();
+
+// });
