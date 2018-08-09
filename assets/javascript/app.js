@@ -49,8 +49,8 @@
     }
     // end of timer block.
     var allQuestions = [{
-        question: "Before Mt. Everest was discovered, whaich mountain was considered to be the highest mountain in the world?",
-        choices: ["Mt. Kilimanjaro", "Kanchenjunga", "Mount Everest"],
+        question: "The worst Animal in the world is?",
+        choices: ["Chicken", "Pollo", "Hähnchen"],
         correctAnswer: 1
       },
     
@@ -133,8 +133,8 @@
       },
     
       {
-        question: "How can you lift an elephant with one hand?",
-        choices: ["Truck", "Use both hands!", "Use a lever", "There is no such thing"],
+        question: "Did I make this website look bad on purpose?",
+        choices: ["Oh god yes", "Yes but Spanish", "Yes", "There is no such thing"],
         correctAnswer: 3
       }
     ];
