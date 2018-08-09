@@ -21,7 +21,7 @@
             $("#clockTimer").text(convertedTime)
             console.log(convertedTime);
             if(countDown.time === 0){
-                $("#finishBtn").hide();
+                $("#next").hide();
                 alert("Out of Time!")
                 countDown.reset();
             }
@@ -159,7 +159,7 @@
       };
       $(document).ready(function() {
 
-        $(".jumbotron").hide();
+        
         $('#start').click(function() {
           $(".jumbotron").fadeIn();
           $(this).hide();
@@ -178,11 +178,6 @@
           event.preventDefault();
           checkAns();
           currentquestion++;
-          $(function() {
-            $("#progressbar").progressbar({
-              value: currentquestion
-            });
-          });
           if (currentquestion < allQuestions.length) {
             setupOptions();
             if (currentquestion == allQuestions.length - 1) {
